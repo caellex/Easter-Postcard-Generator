@@ -22,7 +22,7 @@ input{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('('../Assets/startPage/startBg.png');
+    background-image: url('('Assets/startPage/startBg.png');
     background-size: cover;
     background-position: center; 
     filter: blur(13px);
@@ -129,7 +129,7 @@ input{
 }
 
 .my-card-preview{
-    background-image: url('('../Assets/createView/card.png');
+    background-image: url('('Assets/createView/card.png');
     height: 1000px;
     width: 10000px;
     animation: fadeInOnLoad ease 3s;
@@ -157,7 +157,7 @@ input{
 #card-preview{
     display: flex;
     margin: auto;
-    background-image: url('('../Assets/createView/card.png');
+    background-image: url('('Assets/createView/card.png');
     width: 1600px;
     height: 900px;
     overflow: hidden;
