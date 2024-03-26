@@ -1,0 +1,298 @@
+body{
+    background-color: rgba(0, 0, 0, 0.918);
+
+}
+
+input{
+    border: none;
+    box-shadow: 1px 1px 1px 0px;
+}
+#app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Assets/startPage/startBg.png');
+    background-size: cover;
+    background-position: center; 
+    filter: blur(13px);
+    transform: scale(1.05);
+    animation: fadeInOnLoad ease 3s;
+}
+
+#blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fadeInOnLoad ease 3s;
+}
+
+@keyframes fadeInOnLoad {
+    0% {
+    opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
+}
+
+@keyframes elemFadeInLoad {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+
+
+}
+
+#startpage-wrap{
+    z-index: 0;
+    display:flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+#welcome-text{
+    color: white;
+    position: relative;
+    align-self: center;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    font-weight: normal;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    scale: 2;
+    animation: elemFadeInLoad ease 2.4s;
+}
+
+#create-card{
+    position: relative;
+    align-self: center;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    font-weight: normal;
+    animation: elemFadeInLoad ease 2.4s;
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 5px;
+    scale: 1.4;
+
+}
+
+#my-postcards{
+    position: relative;
+    align-self: center;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    font-weight: normal;
+    animation: elemFadeInLoad ease 2.4s;
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 15px;
+    scale: 1.4;
+
+}
+
+#my-postcard-contents {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.my-card-preview{
+    background-image: url('/Assets/createView/card.png');
+    height: 1000px;
+    width: 10000px;
+    animation: fadeInOnLoad ease 3s;
+    margin-top: -400px;
+    transform: scale(0.2);
+    margin-left: -600px;
+    margin-right: -500px;
+
+
+}
+
+
+#my-postcards:hover,#create-card:hover,#flip-card-button:hover,#append-card-button:hover,#return-to-mainview:hover{
+ background-color: #742f49;
+ color: rgb(211, 211, 211);
+
+
+}
+
+#my-postcards:focus,#create-card:focus{
+ scale: 1.3;
+
+}
+
+#card-preview{
+    display: flex;
+    margin: auto;
+    background-image: url('/Assets/createView/card.png');
+    width: 1600px;
+    height: 900px;
+    overflow: hidden;
+    scale: 0.5;
+    animation: fadeInOnLoad ease 3s;
+}
+
+
+#reciever-input{
+    position: absolute;
+    scale: 2.3;
+    margin: auto;
+    top: 560px;
+    left: 970px;
+}
+#content-input{
+    position: absolute;
+    margin: auto;
+    scale: 2.3;
+    margin: auto;
+    top: 160px;
+    left: 140px;
+}
+#sender-input{
+    position: absolute;
+    margin: auto;
+    scale: 2.3;
+    margin: auto;
+    top: 760px;
+    left: 170px;
+}
+#image-input{
+    position: absolute;
+    margin: auto;
+    scale: 2.3;
+    margin: auto;
+    top: 160px;
+    left: 970px;
+}
+
+#createbutton-wrap{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 180px;
+    left: 75vh;
+    animation: fadeInOnLoad ease 3s;
+    
+}
+
+#flip-card-button{
+    margin-left: 50%;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+
+    height: 40px;
+    width: 200px;
+
+}
+#append-card-button{
+    margin-left: 50%;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    height: 40px;
+    width: 200px;
+    margin-top: 5px;
+
+}
+#append-card-button:focus,#flip-card-button:focus{
+        scale: 0.9;
+}
+
+
+#return-to-mainview{
+position: relative;
+align-self: center;
+z-index: 1;
+font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+font-weight: normal;
+background-color: #EA4C89;
+border-radius: 8px;
+border-style: none;
+box-sizing: border-box;
+color: white;
+margin-top: 20px;
+scale: 1.4;
+margin-left: 35px;
+padding: 5px;
+}
+
+#return-to-mainview:focus{
+    scale: 1.2;
+}
+
+#reciever-previewT{
+    margin-left: 20px;
+    font-size: 40px;
+
+}
+
+#content-previewT{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 20px;
+    font-size: 40px;
+    width: 700px;
+}
+#content-preview{
+    width: 400px;
+}
+
+#sender-previewT{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 640px;
+    font-size: 40px;
+}
+#postcard-front{
+    display: flex;
+    margin: auto;
+    background-image: url('/Assets/createView/card.png');
+    width: 1600px;
+    height: 900px;
+    overflow: hidden;
+    animation: fadeInOnLoad ease 3s;
+}
