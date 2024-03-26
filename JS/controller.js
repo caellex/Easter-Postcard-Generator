@@ -61,7 +61,7 @@ function flipPostcard(){
     let postcardContainer = document.getElementById('card-preview');
 
     if(!postCardFront){
-    postcardContainer.style.backgroundImage = "url('/Assets/createView/card.png')";
+    postcardContainer.style.backgroundImage = "url('../Assets/createView/card.png')";
     postcardContainer.innerHTML = /*HTML*/`
         <p id="reciever-previewT">Dear, <span id="reciever-preview">${updateDyn(previewCard.reciever)}</span></p>
         <p id="content-previewT"><span id="content-preview">${updateDyn(previewCard.content)}</span></p>

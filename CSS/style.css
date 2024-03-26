@@ -1,6 +1,6 @@
 body{
     background-color: rgba(0, 0, 0, 0.918);
-
+    overflow: hidden;
 }
 
 input{
@@ -129,7 +129,7 @@ input{
 }
 
 .my-card-preview{
-    background-image: url('/Assets/createView/card.png');
+    background-image: url('../Assets/createView/card.png');
     height: 1000px;
     width: 10000px;
     animation: fadeInOnLoad ease 3s;
@@ -157,7 +157,7 @@ input{
 #card-preview{
     display: flex;
     margin: auto;
-    background-image: url('/Assets/createView/card.png');
+    background-image: url('../Assets/createView/card.png');
     width: 1600px;
     height: 900px;
     overflow: hidden;
@@ -290,7 +290,7 @@ padding: 5px;
 #postcard-front{
     display: flex;
     margin: auto;
-    background-image: url('/Assets/createView/card.png');
+    background-image: url('../Assets/createView/card.png');
     width: 1600px;
     height: 900px;
     overflow: hidden;
