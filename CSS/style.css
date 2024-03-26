@@ -157,7 +157,7 @@ input{
 #card-preview{
     display: flex;
     margin: auto;
-    background-image: url('/Assets/createView/card.png');
+    background-image: url('../Assets/createView/card.png');
     width: 1600px;
     height: 900px;
     overflow: hidden;
