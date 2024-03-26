@@ -38,10 +38,7 @@ function addToCollection(){
 
 
 
-    document.getElementById('reciever-input').value = "";
-    document.getElementById('content-input').value = "";
-    document.getElementById('sender-input').value = "";
-    document.getElementById('image-input').value = "";
+
     previewCard.reciever = '';
     previewCard.content = '';
     previewCard.sender = '';
